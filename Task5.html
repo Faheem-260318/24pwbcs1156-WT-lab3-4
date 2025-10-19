@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 - Button Styling</title>
+    <style>
+        body { background: #f0f0f0; text-align: center; padding: 40px; font-family: Arial; }
+        button { margin: 10px; padding: 15px 25px; font-size: 16px; border: none; cursor: pointer; transition: 0.3s; }
+        .primary { background: #4caf50; color: white; border-radius: 5px; }
+        .rounded { background: #2196f3; color: white; border-radius: 30px; }
+        .shadow { background: #ff5722; color: white; box-shadow: 0 5px 10px rgba(0,0,0,0.3); }
+        button:hover { transform: scale(1.1); opacity: 0.9; }
+        button:disabled { background: gray; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <button class="primary">Primary</button>
+    <button class="rounded">Rounded</button>
+    <button class="shadow">Shadow</button>
+    <button disabled>Disabled</button>
+</body>
+</html>
