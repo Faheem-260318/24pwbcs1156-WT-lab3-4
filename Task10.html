@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 10 - Advanced Effects</title>
+    <style>
+        body { background: #f5f5f5; font-family: Arial; display: flex; flex-direction: column; align-items: center; padding: 30px; gap: 30px; }
+        h1 { font-size: 40px; background: linear-gradient(to right, #ff7e5f, #feb47b); -webkit-background-clip: text; color: transparent; }
+        .loading { width: 50px; height: 50px; border: 5px solid #ccc; border-top: 5px solid #4caf50; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .checkbox input { display: none; }
+        .checkbox span { display: inline-block; width: 20px; height: 20px; border: 2px solid #333; cursor: pointer; }
+        .checkbox input:checked + span { background: #4caf50; }
+        .text-clip { font-size: 36px; background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60'); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .shadow-box { width: 200px; height: 100px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Gradient Text</h1>
+    <div class="loading"></div>
+    <label class="checkbox"><input type="checkbox"><span></span> Custom Checkbox</label>
+    <div class="text-clip">Text with Image Clip</div>
+    <div class="shadow-box">Shadow Effect</div>
+</body>
+</html>
