@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 - Image Styling</title>
+    <style>
+        body { text-align: center; background: #f4f4f4; padding: 20px; }
+        img { width: 250px; margin: 15px; transition: 0.5s; }
+        .rounded { border-radius: 20px; border: 4px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        .circle { border-radius: 50%; border: 4px solid #555; }
+        .rounded:hover, .circle:hover { transform: scale(1.1); filter: brightness(1.2); }
+        .filter { filter: grayscale(100%); }
+        .overlay { position: relative; display: inline-block; }
+        .overlay-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 18px; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" class="rounded" alt="Nature">
+        <div class="overlay-text">Beautiful Forest</div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=60" class="circle" alt="Nature">
+    <img src="https://images.unsplash.com/photo-1441829266145-b7a3c1a3de0b?auto=format&fit=crop&w=800&q=60" class="filter rounded" alt="Nature">
+</body>
+</html>
