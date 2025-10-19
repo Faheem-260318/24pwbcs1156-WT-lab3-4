@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6 - Form Styling</title>
+    <style>
+        body { background: #eaf2f8; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial; }
+        form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); width: 300px; }
+        input, select, button { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
+        input:focus, select:focus { border-color: #2196f3; outline: none; }
+        button { background: #4caf50; color: white; border: none; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #45a049; }
+        .error { border-color: red; }
+        .success { border-color: green; }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Full Name" class="success">
+        <input type="email" placeholder="Email Address" class="error">
+        <select>
+            <option>Choose Option</option>
+            <option>Student</option>
+            <option>Teacher</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
