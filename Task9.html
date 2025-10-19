@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9 - Transform Gallery</title>
+    <style>
+        body { display: flex; gap: 20px; justify-content: center; align-items: center; height: 100vh; background: #e0f7fa; }
+        img { width: 200px; transition: 0.5s; border-radius: 10px; }
+        .rotate:hover { transform: rotate(20deg); }
+        .scale:hover { transform: scale(1.3); }
+        .translate:hover { transform: translateY(-20px); }
+        .combo:hover { transform: rotate(15deg) scale(1.2) translateY(-10px); }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" class="rotate" alt="Nature">
+    <img src="https://images.unsplash.com/photo-1441829266145-b7a3c1a3de0b?auto=format&fit=crop&w=800&q=60" class="scale" alt="Nature">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" class="translate" alt="Nature">
+    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=60" class="combo" alt="Nature">
+</body>
+</html>
