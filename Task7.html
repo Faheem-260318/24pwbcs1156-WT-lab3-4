@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7 - Card Component</title>
+    <style>
+        body { background: #f5f5f5; display: flex; justify-content: center; gap: 20px; padding: 50px; font-family: Arial; }
+        .card { background: white; width: 250px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); overflow: hidden; transition: 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 100%; height: 150px; object-fit: cover; }
+        .card-body { padding: 15px; }
+        .card-body h3 { margin: 0; font-size: 20px; }
+        .card-body p { font-size: 14px; color: #555; }
+        .card button { margin-top: 10px; padding: 10px; width: 100%; background: #4caf50; color: white; border: none; cursor: pointer; }
+        .card button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60" alt="Nature">
+        <div class="card-body">
+            <h3>Forest</h3>
+            <p>Peaceful green forest with fresh air and light.</p>
+            <button>Explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=60" alt="Nature">
+        <div class="card-body">
+            <h3>Mountain</h3>
+            <p>Beautiful mountain with clear sky and fresh breeze.</p>
+            <button>Explore</button>
+        </div>
+    </div>
+</body>
+</html>
