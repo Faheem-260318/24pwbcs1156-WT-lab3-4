@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 - Background Gallery</title>
+    <style>
+        body { margin: 0; font-family: Arial; }
+        .solid { height: 150px; background: #4caf50; }
+        .image-bg { height: 150px; background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60') repeat; }
+        .gradient { height: 150px; background: linear-gradient(to right, #ff7e5f, #feb47b); }
+        .radial { height: 150px; background: radial-gradient(circle, #6a11cb, #2575fc); }
+        .multiple { height: 200px; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60'), linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)); background-blend-mode: overlay; background-size: cover; }
+    </style>
+</head>
+<body>
+    <div class="solid"></div>
+    <div class="image-bg"></div>
+    <div class="gradient"></div>
+    <div class="radial"></div>
+    <div class="multiple"></div>
+</body>
+</html>
